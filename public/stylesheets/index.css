@@ -135,10 +135,6 @@
     transition: transform 0.5s ease-in-out;
 }
 
-.broncohacks2025-glazing:hover {
-    transform: scale(1.2) rotate(0deg) translateX(0%);
-}
-
 .look-here, .bronohacks-poster, .link-to-broncohacks2025 {
     position: absolute;
 }
@@ -148,13 +144,7 @@
     height: 120%;
     top: -10%;
     left: -10%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
     z-index: 5;
-}
-
-.look-here:hover {
-    opacity: 1;
 }
 
 .link-to-broncohacks2025 {
