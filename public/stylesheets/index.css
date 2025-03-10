@@ -124,6 +124,52 @@
     color: var(--dark-gray);
 }
 
+
+/* REMOVE THIS WHEN THE BRONCO HACKS 2025 IS OVER*/
+.broncohacks2025-glazing {
+    position: absolute;
+    height: 40%;
+    width: 25%;
+    top: 55%;
+    transform: rotate(20deg) translateX(-20%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.broncohacks2025-glazing:hover {
+    transform: scale(1.2) rotate(0deg) translateX(0%);
+}
+
+.look-here, .bronohacks-poster, .link-to-broncohacks2025 {
+    position: absolute;
+}
+
+.look-here {
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 5;
+}
+
+.look-here:hover {
+    opacity: 1;
+}
+
+.link-to-broncohacks2025 {
+    z-index: 10;
+}
+
+
+.broncohacks-poster {
+    height: auto;
+    width: 100%;
+    z-index: 2;
+}
+
+
+
 /* scroll indicator at bottom of screen */
 @keyframes scrollIndicatorLoop {
     from {
@@ -1060,6 +1106,50 @@ footer ul {
         margin-top: 0;
         margin-bottom: 0rem;
         width: 75%;
+    }
+
+    /* REMOVE THIS WHEN THE BRONCO HACKS 2025 IS OVER*/
+    .broncohacks2025-glazing {
+        position: absolute;
+        height: 20%;
+        width: 15%;
+        top: 30%;
+        right: 20%;
+        transform: rotate(20deg);
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .broncohacks2025-glazing:hover {
+        transform: scale(1.2) rotate(0deg);
+    }
+    
+    .look-here, .bronohacks-poster, .link-to-broncohacks2025 {
+        position: absolute;
+    }
+    
+    .look-here {
+        width: 120%;
+        height: 120%;
+        top: -10%;
+        left: -10%;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        z-index: 5;
+    }
+    
+    .look-here:hover {
+        opacity: 1;
+    }
+    
+    .link-to-broncohacks2025 {
+        z-index: 10;
+    }
+    
+    
+    .broncohacks-poster {
+        height: auto;
+        width: 100%;
+        z-index: 2;
     }
 
     /* about section rules */

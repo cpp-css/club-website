@@ -2,6 +2,7 @@
 <html lang='en'>
 <head>
     <meta charset='UTF-8'>
+    <link rel="icon" type="image/svg+xml" href="../images/css new logo small.png" />
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>CSS @ Cal Poly Pomona</title>
     <!-- Stylesheets -->
@@ -13,7 +14,7 @@
 <nav class='header'>
     <!-- Logo -->
     <a class='smoothScroll' href='#top'>
-        <img src='images/logo.png' alt='logo' class='navbar-logo'>
+        <img src='../images/css new logo small.png' alt='logo' class='navbar-logo'>
     </a>
     <!-- Mobile hamburger menu -->
     <div class='hamburger-menu-container'>
@@ -73,16 +74,31 @@
 <!-- Home page -->
 <header id='top'>
     <!-- Separate club logo for mobile website -->
-    <img src='images/logo.png' alt='logo' class='mobile-logo'>
+    <img src='images/css new logo small.png' alt='logo' class='mobile-logo'>
 
     <!-- Website Title and header -->
     <div class='inner'>
         <p>ASSOCIATION FOR COMPUTING MACHINERY CHAPTER</p>
         <h1>COMPUTER SCIENCE SOCIETY</h1>
         <h5>CAL POLY POMONA</h5>
-
+        
+        
         <a class='button smoothScroll' href='#about'>LEARN MORE</a>
+
+
     </div>
+
+    
+    <!-- TEMP DIV FOR THE BRONCOHACKS GLAZING. MAKE SURE TO REMOVE THIS WHEN THE EVENT IS OVER-->
+    <div class="broncohacks2025-glazing">
+        <a href="https://www.broncohacks.org/" class="link-to-broncohacks2025">
+            <img class="look-here" src="images/red-circle.gif" alt="">
+            <img class="broncohacks-poster" src="images/BH2025AllSchools.jpg" alt="">
+        </a>
+    </div>
+
+
+
 </header>
 <!-- About section first page -->
 <section id='about'>
@@ -173,21 +189,21 @@
                     university and clubs. I look forward to meeting you all and I hope you enjoy your time at CPP!</p> -->
                 
                     <!-- Chris, Club President -->
-                <div class='e-board-description e-board-description-active'>
+                <!-- <div class='e-board-description e-board-description-active'> -->
                     <!-- Officer Titles -->
-                    <h2 class='officer-title'>Co-President</h2>
+                    <!-- <h2 class='officer-title'>Co-President</h2> -->
                     <!-- Officer Bio -->
-                    <p id='chris'>
+                    <!-- <p id='chris'>
                         Hello, I’m Chris, a 4th year CS major interested in software, web dev, and parallel 
                         processing. My hobbies outside of class include badminton, learning japanese, playing video 
                         games, and reading webtoons. If you see me around, feel free to say hi! c:
                     </p>
-                </div>
+                </div> -->
 
                 <!-- Justin, Club Co-President -->
                 <div class='e-board-description e-board-description-active'>
                     <!-- Officer Titles -->
-                    <h2 class='officer-title'>Co-President</h2>
+                    <h2 class='officer-title'>President</h2>
                     <!-- Officer Bio -->
                      <!-- this is temporary, will replace once I have Justin's updated desc -->
                     <p id='justin'>
@@ -379,11 +395,12 @@
                     <h2 class='officer-title'>Webmaster</h2>
 
                     <p id='cesar'>
-                        Hey y’all. My name is Cesar, and I am serving as the Webmaster for Computer Science 
-                        Society. I am most interested in data science and software as well as meeting new 
-                        people inside and outside the club. Outside of class, I enjoy playing volleyball, 
-                        basketball, and sometimes rock climbing. If you ever see me around on campus, 
-                        don’t be afraid to say hi!
+                        Hello everyone. My name is Nicholas, and I am serving as the Webmaster for Computer 
+                        Science Society. I am currently a 4th year studying Computer Science and I'm proud to be
+                        a part of this club (community even). I hope to improve the overall web design for our 
+                        club this year. In my free time, you can often see me rock climbing or hanging out with
+                        friends in a circle underneath a tree in the campus plaza. I hope to see you around the 
+                        club room or around campus! It's great to meet new faces!
                     </p>
                 </div>
             
@@ -396,7 +413,7 @@
         <div class='e-board-gallery'>
             
             <!-- Co-President Picture -->
-            <img src='images/Chris.png' alt='Chris' class='e-board-picture'>
+            <!-- <img src='images/Chris.png' alt='Chris' class='e-board-picture'> -->
 
             <!-- Co-President Picture -->
             <img src='images/justin.jpg' alt='Justin' class='e-board-picture'>
@@ -447,7 +464,8 @@
             <img src='images/johnny.jpg' alt='Johhny' class='e-board-picture'>
 
             <!-- Webmaster Picture UPDATE -->
-            <img src='images/cesar.jpg' alt='Cesar' class='e-board-picture'>
+            <!-- <img src='images/cesar.jpg' alt='Cesar' class='e-board-picture'> -->
+            <img src='images/nick.jpg' alt='nick' class='e-board-picture'>
             
         </div>
         <div class='e-board-gallery-controls-container'>
@@ -460,7 +478,7 @@
         </div>
 
         <!-- Adjust the number of cards there are currently on the webpage -->
-        <p class='e-board-gallery-counter'>1 / 12</p>
+        <p class='e-board-gallery-counter'>1 / 11</p>
 
     </div>
 </section>
@@ -699,7 +717,7 @@
             </li>
         </ul>
         <div class='project-media-container'>
-            <img src='images/broncohacks-staticSite.png' alt='BroncoHacks Static Site' class='project-media'>
+            <img src='images/broncoHacks2025.png' alt='BroncoHacks Static Site' class='project-media'>
             <p class='project-caption'>Home page for the BroncoHacks Website</p>
         </div>
     </div>
@@ -736,6 +754,40 @@
             <p class='project-caption'>Backend database for our club's mobile application</p> -->
         <!-- </div> -->
     <!-- </div> -->
+    <div class='project-container'>
+        <div class='project-title-container' id='second-project'>
+            <h2 class='project-title'>Bronco Hacks Application Portal</h2>
+            <div class='circle'></div>
+        </div>
+        <ul class='project-description'>
+            <li>
+                Application Portal to sign up for our BroncoHacks Hackathon @ CPP! This website is used to create or join teams
+                for our Hackathons. This website also displays information of your current team members in order to
+                easily connect with them. This ensures for a smoother experience while hackers get prepared
+                for a fun 24 hours of non-stop coding!
+            </li>
+            <li>
+                Front-end Technologies: React TypeScript, Tailwind CSS, Figma, Git/GitHub
+            </li>
+            <li>
+                Back-end Technologies: NodeJS, Python Flask, Sqlite, 
+            </li>
+            <li>
+                Services: Vercel, Render, Mailgun, Squarespace
+            </li>
+            <li>
+                Developers: Daniel Pasion, Nicholas Amancio, Caleb Chung, Cesar Henry dePaula, Jade Nguyen, Tony Tong, Justin Nguyen, Tommy Phao, Jayden Nguyen
+            </li>
+            <li class='button-container'>
+                <a class='button app-demo' href='https://github.com/BroncoHacks-Website/BroncoHacks-Portal' target='_blank'>GitHub Repository</a>
+            </li>
+        </ul>
+        <div class='project-media-container'>
+            <img src='images/broncoHacksApplicationPortal2025.png' alt='Bronco Bond Application' class='project-media'>
+            <p class='project-caption'>Home Page for the BroncoHacks Application Portal</p>
+        </div>
+    </div>
+
     <div class='project-container'>
         <div class='project-title-container' id='second-project'>
             <h2 class='project-title'>Bronco Bond</h2>
