@@ -90,12 +90,13 @@
 
     
     <!-- TEMP DIV FOR THE BRONCOHACKS GLAZING. MAKE SURE TO REMOVE THIS WHEN THE EVENT IS OVER-->
-    <div class="broncohacks2025-glazing">
+    <!-- JUSTIN NO LIKE THIS -->
+    <!-- <div class="broncohacks2025-glazing">
         <a href="https://www.broncohacks.org/" class="link-to-broncohacks2025">
             <img class="look-here" src="images/red-circle.gif" alt="">
             <img class="broncohacks-poster" src="images/BH2025AllSchools.jpg" alt="">
         </a>
-    </div>
+    </div> -->
 
 
 
@@ -112,7 +113,7 @@
 
     <!-- paragraph description about the club -->
     <div class='about-desc-wrapper'>
-        <p class='about-desc'>Computer Science Society is the oldest organization at Cal Poly Pomona. We are one of the largest clubs that host events regularly and advise our members on the next path to success. Our motto is “Connect passion to empathy“.</p>
+        <p class='about-desc'>Computer Science Society is the oldest computer science organization at Cal Poly Pomona. We are one of the largest clubs that host events regularly and advise our members on the next path to success. Our motto is “Connect passion to empathy“.</p>
     </div>
 </section>
 <!-- Mission section -->
@@ -492,6 +493,14 @@
     </div>
     <p class='events-semester'>Semester: Fall 2020</p>
     <!-- These are separate hidden events item containers for the mobile design -->
+    <div class='mobile-events-desc-container' id='mobile-csspi'>
+        <p class='mobile-events-item'>BroncoHacks Hackathons</p>
+        <div class='mobile-tooltip'><p>BroncoHacks is a student-led organization with the intended
+        goal of bringing hackathon culture to CPP and the surrounding area. We introduce "MiniHack", a 
+        6 hour long hackathon every Fall to introduce coding novices to the field of coding as well as 
+        "BroncoHacks", a 24 hour in-person hackathon every Spring which is open to all colleges and 
+        free of entry! We hope to see you there!</p></div>
+    </div>
     <!-- Computer Science Society Project Initiative (CSSPI) -->
     <div class='mobile-events-desc-container' id='mobile-csspi'>
         <p class='mobile-events-item'>Computer Science Society Project Initiative (CSSPI)</p>
@@ -568,13 +577,22 @@
         <div class='events-title-container'>
             <h1 class='events-title'>EVENTS</h1>
         </div>
-        <!-- Computer Science Society Project Initiative (CSSPI) -->
-        <div class='events-item-container' id='CSSPI'>
+
+        <div class='events-item-container' id='BroncoHacksHackathon'>
             <p class='events-click-indicator'>click me</p>
             <div class='events-click-indicator-line'></div>
             <p class='events-read-more'>More...</p>
+            <p class='events-item'>BroncoHacks Hackathons</p>
+            <div class='tooltip below-tooltip'><p>BroncoHacks is a student-led organization with the intended
+            goal of bringing hackathon culture to CPP and the surrounding area. We introduce "MiniHack", a 
+            6 hour long hackathon every Fall to introduce coding novices to the field of coding as well as 
+            "BroncoHacks", a 24 hour in-person hackathon every Spring which is open to all colleges and 
+            free of entry! We hope to see you there!</p></div>
+        </div>
+        <!-- Computer Science Society Project Initiative (CSSPI) -->
+        <div class='events-item-container' id='CSSPI'>
             <p class='events-item'>Computer Science Society Project Initiative (CSSPI)</p>
-            <div class='tooltip below-tooltip'><p>This series of events is to help students apply
+            <div class='tooltip above-tooltip'><p>This series of events is to help students apply
             their useful skills that they can learn outside of classes to solve something
             interesting. Whether in education, the environment, or of their own problems. This
             project initiative represents learning by doing. An example is learning the latest
@@ -583,7 +601,7 @@
         <!-- Web Design -->
         <div class='events-item-container' id='web-design'>
             <p class='events-item'>Web Design</p>
-            <div class='tooltip above-tooltip'>If you are interested in learning how to design a
+            <div class='tooltip below-tooltip'>If you are interested in learning how to design a
             website and want to showcase some of your meaningful skills as part of our club, we
             would love your contribution in making our website more innovative and interactive.
             This event is to walk you through building a website and showcase it as part of our

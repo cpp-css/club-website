@@ -126,7 +126,8 @@
 
 
 /* REMOVE THIS WHEN THE BRONCO HACKS 2025 IS OVER*/
-.broncohacks2025-glazing {
+/* JUSTIN DOESN'T LIKE THIS HE THINKS IT DOESN'T MATCH WITH THE PAGE */
+/* .broncohacks2025-glazing {
     position: absolute;
     height: 40%;
     width: 25%;
@@ -156,7 +157,7 @@
     height: auto;
     width: 100%;
     z-index: 2;
-}
+} */
 
 
 
@@ -673,6 +674,7 @@ header {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    padding: 0 5%;
 }
 
 /* hide desktop projects elements */
@@ -1099,7 +1101,7 @@ footer ul {
     }
 
     /* REMOVE THIS WHEN THE BRONCO HACKS 2025 IS OVER*/
-    .broncohacks2025-glazing {
+    /* .broncohacks2025-glazing {
         position: absolute;
         height: 20%;
         width: 15%;
@@ -1140,7 +1142,7 @@ footer ul {
         height: auto;
         width: 100%;
         z-index: 2;
-    }
+    } */
 
     /* about section rules */
 
@@ -1453,8 +1455,8 @@ footer ul {
 
     .events-grid {
         display: grid;
-        grid-template-columns: 1fr 1.5fr 1fr;
-        grid-template-rows: 1.5fr 1fr 2fr 1.5fr 1.5fr 1fr 1.75fr 2fr 1fr;
+        grid-template-columns: 1fr 1.5fr 1.5fr;
+        grid-template-rows: 1.5fr 1fr 2fr 1.5fr 1.5fr 1.5fr 1.75fr 2fr 1fr;
         text-align: center;
         width: 100%;
     }
@@ -1586,10 +1588,9 @@ footer ul {
     }
 
     /* before pseudoelements to connect the light blue line in this section  */
+    #BroncoHacksHackathon::before,
     #CSSPI::before,
-    #web-design::before,
-    #recruiter::before,
-    #workshops::before {
+    #recruiter::before {
         content: '';
         display: block;
         background-color: var(--blue);
@@ -1600,7 +1601,7 @@ footer ul {
         top: -5px;
     }
 
-    #CSSPI {
+    #BroncoHacksHackathon {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
@@ -1608,7 +1609,7 @@ footer ul {
         position: relative;
     }
 
-    #web-design {
+    #CSSPI {
         position: relative;
         grid-column-start: 3;
         grid-column-end: 4;
@@ -1616,7 +1617,7 @@ footer ul {
         grid-row-end: 4;
     }
 
-    #speaker {
+    #web-design {
         border-left: none;
         border-right: 5px solid var(--blue);
         position: relative;
@@ -1624,9 +1625,16 @@ footer ul {
         grid-column-end: 4;
         grid-row-start: 4;
         grid-row-end: 5;
+        left: -5px;
     }
 
-    #recruiter {
+    #web-design::before{
+        left: initial;
+        right: 5px;
+    }
+
+
+    #speaker {
         border-left: none;
         border-right: 5px solid var(--blue);
         position: relative;
@@ -1636,13 +1644,13 @@ footer ul {
         grid-row-end: 6;
     }
 
-    #recruiter::before,
-    #workshops::before {
+    #speaker::before,
+    #recruiter::before {
         left: initial;
         right: -5px;
     }
 
-    #workshops {
+    #recruiter {
         border-left: none;
         border-right: 5px solid var(--blue);
         position: relative;
@@ -1650,6 +1658,15 @@ footer ul {
         grid-column-end: 2;
         grid-row-start: 6;
         grid-row-end: 7;
+    }
+
+    #workshops {
+        border-left: none;
+        position: relative;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 7;
+        grid-row-end: 8;
     }
 
     .events-grid-spacer {
