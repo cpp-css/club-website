@@ -236,7 +236,7 @@ $(document).ready(function() {
             $root.animate({
                 scrollTop: $(this.hash).offset().top
             // how much time it takes to smooth scroll in milliseconds
-            }, 2500);
+            }, 1500);
         });
     }
     
