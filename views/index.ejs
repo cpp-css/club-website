@@ -2,6 +2,7 @@
 <html lang='en'>
 <head>
     <meta charset='UTF-8'>
+    <link rel="icon" type="image/svg+xml" href="../images/logo_for_web_2_2025.png" />
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>CSS @ Cal Poly Pomona</title>
     <!-- Stylesheets -->
@@ -13,7 +14,7 @@
 <nav class='header'>
     <!-- Logo -->
     <a class='smoothScroll' href='#top'>
-        <img src='images/logo.png' alt='logo' class='navbar-logo'>
+        <img src='../images/logo_for_web_2_2025.png' alt='logo' class='navbar-logo'>
     </a>
     <!-- Mobile hamburger menu -->
     <div class='hamburger-menu-container'>
@@ -73,16 +74,32 @@
 <!-- Home page -->
 <header id='top'>
     <!-- Separate club logo for mobile website -->
-    <img src='images/logo.png' alt='logo' class='mobile-logo'>
+    <img src='../images/logo_for_web_2_2025.png' alt='logo' class='mobile-logo'>
 
     <!-- Website Title and header -->
     <div class='inner'>
         <p>ASSOCIATION FOR COMPUTING MACHINERY CHAPTER</p>
         <h1>COMPUTER SCIENCE SOCIETY</h1>
         <h5>CAL POLY POMONA</h5>
-
+        
+        
         <a class='button smoothScroll' href='#about'>LEARN MORE</a>
+
+
     </div>
+
+    
+    <!-- TEMP DIV FOR THE BRONCOHACKS GLAZING. MAKE SURE TO REMOVE THIS WHEN THE EVENT IS OVER-->
+    <!-- JUSTIN NO LIKE THIS -->
+    <!-- <div class="broncohacks2025-glazing">
+        <a href="https://www.broncohacks.org/" class="link-to-broncohacks2025">
+            <img class="look-here" src="images/red-circle.gif" alt="">
+            <img class="broncohacks-poster" src="images/BH2025AllSchools.jpg" alt="">
+        </a>
+    </div> -->
+
+
+
 </header>
 <!-- About section first page -->
 <section id='about'>
@@ -96,7 +113,7 @@
 
     <!-- paragraph description about the club -->
     <div class='about-desc-wrapper'>
-        <p class='about-desc'>Computer Science Society is the oldest organization at Cal Poly Pomona. We are one of the largest clubs that host events regularly and advise our members on the next path to success. Our motto is “Connect passion to empathy“.</p>
+        <p class='about-desc'>Computer Science Society is the oldest computer science organization at Cal Poly Pomona. We are one of the largest clubs that host events regularly and advise our members on the next path to success. Our motto is “Connect passion to empathy“.</p>
     </div>
 </section>
 <!-- Mission section -->
@@ -173,21 +190,21 @@
                     university and clubs. I look forward to meeting you all and I hope you enjoy your time at CPP!</p> -->
                 
                     <!-- Chris, Club President -->
-                <div class='e-board-description e-board-description-active'>
+                <!-- <div class='e-board-description e-board-description-active'> -->
                     <!-- Officer Titles -->
-                    <h2 class='officer-title'>Co-President</h2>
+                    <!-- <h2 class='officer-title'>Co-President</h2> -->
                     <!-- Officer Bio -->
-                    <p id='chris'>
+                    <!-- <p id='chris'>
                         Hello, I’m Chris, a 4th year CS major interested in software, web dev, and parallel 
                         processing. My hobbies outside of class include badminton, learning japanese, playing video 
                         games, and reading webtoons. If you see me around, feel free to say hi! c:
                     </p>
-                </div>
+                </div> -->
 
                 <!-- Justin, Club Co-President -->
                 <div class='e-board-description e-board-description-active'>
                     <!-- Officer Titles -->
-                    <h2 class='officer-title'>Co-President</h2>
+                    <h2 class='officer-title'>President</h2>
                     <!-- Officer Bio -->
                      <!-- this is temporary, will replace once I have Justin's updated desc -->
                     <p id='justin'>
@@ -379,11 +396,12 @@
                     <h2 class='officer-title'>Webmaster</h2>
 
                     <p id='cesar'>
-                        Hey y’all. My name is Cesar, and I am serving as the Webmaster for Computer Science 
-                        Society. I am most interested in data science and software as well as meeting new 
-                        people inside and outside the club. Outside of class, I enjoy playing volleyball, 
-                        basketball, and sometimes rock climbing. If you ever see me around on campus, 
-                        don’t be afraid to say hi!
+                        Hello everyone. My name is Nicholas, and I am serving as the Webmaster for Computer 
+                        Science Society. I am currently a 4th year studying Computer Science and I'm proud to be
+                        a part of this club (community even). I hope to improve the overall web design for our 
+                        club this year. In my free time, you can often see me rock climbing or hanging out with
+                        friends in a circle underneath a tree in the campus plaza. I hope to see you around the 
+                        club room or around campus! It's great to meet new faces!
                     </p>
                 </div>
             
@@ -396,7 +414,7 @@
         <div class='e-board-gallery'>
             
             <!-- Co-President Picture -->
-            <img src='images/Chris.png' alt='Chris' class='e-board-picture'>
+            <!-- <img src='images/Chris.png' alt='Chris' class='e-board-picture'> -->
 
             <!-- Co-President Picture -->
             <img src='images/justin.jpg' alt='Justin' class='e-board-picture'>
@@ -447,7 +465,8 @@
             <img src='images/johnny.jpg' alt='Johhny' class='e-board-picture'>
 
             <!-- Webmaster Picture UPDATE -->
-            <img src='images/cesar.jpg' alt='Cesar' class='e-board-picture'>
+            <!-- <img src='images/cesar.jpg' alt='Cesar' class='e-board-picture'> -->
+            <img src='images/nick.jpg' alt='nick' class='e-board-picture'>
             
         </div>
         <div class='e-board-gallery-controls-container'>
@@ -460,7 +479,7 @@
         </div>
 
         <!-- Adjust the number of cards there are currently on the webpage -->
-        <p class='e-board-gallery-counter'>1 / 12</p>
+        <p class='e-board-gallery-counter'>1 / 11</p>
 
     </div>
 </section>
@@ -474,6 +493,14 @@
     </div>
     <p class='events-semester'>Semester: Fall 2020</p>
     <!-- These are separate hidden events item containers for the mobile design -->
+    <div class='mobile-events-desc-container' id='mobile-csspi'>
+        <p class='mobile-events-item'>BroncoHacks Hackathons</p>
+        <div class='mobile-tooltip'><p>BroncoHacks is a student-led organization with the intended
+        goal of bringing hackathon culture to CPP and the surrounding area. We introduce "MiniHack", a 
+        6 hour long hackathon every Fall to introduce coding novices to the field of coding as well as 
+        "BroncoHacks", a 24 hour in-person hackathon every Spring which is open to all colleges and 
+        free of entry! We hope to see you there!</p></div>
+    </div>
     <!-- Computer Science Society Project Initiative (CSSPI) -->
     <div class='mobile-events-desc-container' id='mobile-csspi'>
         <p class='mobile-events-item'>Computer Science Society Project Initiative (CSSPI)</p>
@@ -550,13 +577,22 @@
         <div class='events-title-container'>
             <h1 class='events-title'>EVENTS</h1>
         </div>
-        <!-- Computer Science Society Project Initiative (CSSPI) -->
-        <div class='events-item-container' id='CSSPI'>
+
+        <div class='events-item-container' id='BroncoHacksHackathon'>
             <p class='events-click-indicator'>click me</p>
             <div class='events-click-indicator-line'></div>
             <p class='events-read-more'>More...</p>
+            <p class='events-item'>BroncoHacks Hackathons</p>
+            <div class='tooltip below-tooltip'><p>BroncoHacks is a student-led organization with the intended
+            goal of bringing hackathon culture to CPP and the surrounding area. We introduce "MiniHack", a 
+            6 hour long hackathon every Fall to introduce coding novices to the field of coding as well as 
+            "BroncoHacks", a 24 hour in-person hackathon every Spring which is open to all colleges and 
+            free of entry! We hope to see you there!</p></div>
+        </div>
+        <!-- Computer Science Society Project Initiative (CSSPI) -->
+        <div class='events-item-container' id='CSSPI'>
             <p class='events-item'>Computer Science Society Project Initiative (CSSPI)</p>
-            <div class='tooltip below-tooltip'><p>This series of events is to help students apply
+            <div class='tooltip above-tooltip'><p>This series of events is to help students apply
             their useful skills that they can learn outside of classes to solve something
             interesting. Whether in education, the environment, or of their own problems. This
             project initiative represents learning by doing. An example is learning the latest
@@ -565,7 +601,7 @@
         <!-- Web Design -->
         <div class='events-item-container' id='web-design'>
             <p class='events-item'>Web Design</p>
-            <div class='tooltip above-tooltip'>If you are interested in learning how to design a
+            <div class='tooltip below-tooltip'>If you are interested in learning how to design a
             website and want to showcase some of your meaningful skills as part of our club, we
             would love your contribution in making our website more innovative and interactive.
             This event is to walk you through building a website and showcase it as part of our
@@ -607,39 +643,34 @@
 <section id='projects'>
     <div class='projects-title-container'><h1 class='projects-title'>PROJECTS</h1></div>
     <div class='project-container'>
-        <div class='project-title-container'>
-            <h2 class='project-title'>Exploring Machine Learning Models</h2>
+        <div class='project-title-container' id='second-project'>
+            <h2 class='project-title'>Bronco Bond</h2>
             <div class='circle'></div>
         </div>
         <ul class='project-description'>
             <li>
-                We are a project team exploring various machine-learning algorithms. Our primary objective 
-                is to solve one problem: predicting an individual’s salary based on a set of variables. We 
-                will analyze, compare, and contrast the models to understand which one is the most effective. 
-                After thorough analysis, we have found that Linear Regression is the most optimal solution, 
-                offering greater accuracy and ease of use for programmers.
+                BroncoBond is a student networking app designed to help Cal Poly Pomona students 
+                uncover people, places, programs, and events associated with CPP. The app offers 
+                a solution to the difficulty students face in fully utilizing CPP’s resources. 
+                By offering a streamlined platform that consolidates campus resources into one 
+                easy-to-use app BroncoBond simplifies the process of connecting on campus.
             </li>
             <li>
-                Project Lead: Michelle Reyes
+                Front-end Technologies: Flutter, Dart
             </li>
             <li>
-                Members: Megan Bee, Michael Castillo, Britney Collier, Bijou Raj, Nicholas Hoang, Hanmo Zhang, Gabriel Robles, Johnny Garcia
+                Back-end Technologies: NodeJS, ExpressJS, MongoDB, SocketIO
             </li>
             <li>
-                Python Libraries: Scikit-learn, TensorFlow, Seaborn, Matplotlib, Pandas, NumPy
-            </li>
-            <li>
-                Code Editors: Visual Studio Code, Jupyter Notebook
+                Services: AWS EC2, Route53, VPC
             </li>
             <li class='button-container'>
-                <a class='button app-demo' href='https://github.com/CSS-Exploring-Machine-Learning-Models/Machine_Learning_Algorithms.git' target='_blank'>GitHub Repository</a>
+                <a class='button app-demo' href='https://github.com/BroncoBond/Bronco-Bond' target='_blank'>GitHub Repository</a>
             </li>
         </ul>
         <div class='project-media-container'>
-            <video class='old-website-video' controls>
-                <source src='videos/ML-project.mov' type='video/mp4'>
-                Graphs and Results Produced by Machine Learning Models
-            </video>
+            <img src='images/broncobond.png' alt='Bronco Bond Application' class='project-media'>
+            <p class='project-caption'>User Interface design for Bronco Bond</p>
         </div>
     </div>
     <div class='project-container'>
@@ -699,7 +730,7 @@
             </li>
         </ul>
         <div class='project-media-container'>
-            <img src='images/broncohacks-staticSite.png' alt='BroncoHacks Static Site' class='project-media'>
+            <img src='images/broncoHacks2025.png' alt='BroncoHacks Static Site' class='project-media'>
             <p class='project-caption'>Home page for the BroncoHacks Website</p>
         </div>
     </div>
@@ -738,33 +769,71 @@
     <!-- </div> -->
     <div class='project-container'>
         <div class='project-title-container' id='second-project'>
-            <h2 class='project-title'>Bronco Bond</h2>
+            <h2 class='project-title'>Bronco Hacks Application Portal</h2>
             <div class='circle'></div>
         </div>
         <ul class='project-description'>
             <li>
-                BroncoBond is a student networking app designed to help Cal Poly Pomona students 
-                uncover people, places, programs, and events associated with CPP. The app offers 
-                a solution to the difficulty students face in fully utilizing CPP’s resources. 
-                By offering a streamlined platform that consolidates campus resources into one 
-                easy-to-use app BroncoBond simplifies the process of connecting on campus.
+                Application Portal to sign up for our BroncoHacks Hackathon @ CPP! This website is used to create or join teams
+                for our Hackathons. This website also displays information of your current team members in order to
+                easily connect with them. This ensures for a smoother experience while hackers get prepared
+                for a fun 24 hours of non-stop coding!
             </li>
             <li>
-                Front-end Technologies: Flutter, Dart
+                Front-end Technologies: React TypeScript, Tailwind CSS, Figma, Git/GitHub
             </li>
             <li>
-                Back-end Technologies: NodeJS, ExpressJS, MongoDB, SocketIO
+                Back-end Technologies: NodeJS, Python Flask, Sqlite, 
             </li>
             <li>
-                Services: AWS EC2, Route53, VPC
+                Services: Vercel, Render, Mailgun, Squarespace
+            </li>
+            <li>
+                Developers: Daniel Pasion, Nicholas Amancio, Caleb Chung, Cesar Henry dePaula, Jade Nguyen, Tony Tong, Justin Nguyen, Tommy Phao, Jayden Nguyen
             </li>
             <li class='button-container'>
-                <a class='button app-demo' href='https://github.com/BroncoBond/Bronco-Bond' target='_blank'>GitHub Repository</a>
+                <a class='button app-demo' href='https://github.com/BroncoHacks-Website/BroncoHacks-Portal' target='_blank'>GitHub Repository</a>
             </li>
         </ul>
         <div class='project-media-container'>
-            <img src='images/broncobond.png' alt='Bronco Bond Application' class='project-media'>
-            <p class='project-caption'>User Interface design for Bronco Bond</p>
+            <img src='images/broncoHacksApplicationPortal2025.png' alt='Bronco Bond Application' class='project-media'>
+            <p class='project-caption'>Home Page for the BroncoHacks Application Portal</p>
+        </div>
+    </div>
+    <div class='project-container'>
+        <div class='project-title-container'>
+            <h2 class='project-title'>Exploring Machine Learning Models</h2>
+            <div class='circle'></div>
+        </div>
+        <ul class='project-description'>
+            <li>
+                We are a project team exploring various machine-learning algorithms. Our primary objective 
+                is to solve one problem: predicting an individual’s salary based on a set of variables. We 
+                will analyze, compare, and contrast the models to understand which one is the most effective. 
+                After thorough analysis, we have found that Linear Regression is the most optimal solution, 
+                offering greater accuracy and ease of use for programmers.
+            </li>
+            <li>
+                Project Lead: Michelle Reyes
+            </li>
+            <li>
+                Members: Megan Bee, Michael Castillo, Britney Collier, Bijou Raj, Nicholas Hoang, Hanmo Zhang, Gabriel Robles, Johnny Garcia
+            </li>
+            <li>
+                Python Libraries: Scikit-learn, TensorFlow, Seaborn, Matplotlib, Pandas, NumPy
+            </li>
+            <li>
+                Code Editors: Visual Studio Code, Jupyter Notebook
+            </li>
+            <li class='button-container'>
+                <a class='button app-demo' href='https://github.com/CSS-Exploring-Machine-Learning-Models/Machine_Learning_Algorithms.git' target='_blank'>GitHub Repository</a>
+            </li>
+        </ul>
+        <div class='project-media-container'>
+            <video class='old-website-video' controls>
+                <source src='videos/ML-project.mov' type='video/mp4'>
+                Graphs and Results Produced by Machine Learning Models
+            </video>
         </div>
     </div>
     <!-- <div class='project-container'> -->
@@ -882,95 +951,100 @@
 <footer id='contact-us'>
     <div class='footer-container'>
         <!-- Invisible divs that act like horizontal rules to left and right of comp sci logo -->
-        <div class='footer-outline'></div>
-        <div class='comp-sci-logo'><img src='images/css new logo.png' alt=''></div>
-        <div class='footer-outline'></div>
-        <div class='email-container'>
-            <ul>
-                <li>REACH US AT OUR EMAIL</li>
-                <li>css.cpp.edu@gmail.com</li>
-            </ul>
-            <!-- HTML Form for new club members to input their e-mail to be added to club mailing
-            list -->
-            <!-- 
-            <div class='email-form'>
-                <!- - placeholder action for PHP file to process user's inputted email to add to mailing list - ->
-                <form action=''>
-                    <ul>
-                        <li>BECOME A MEMBER</li>
-                        <!- - This is where users input their email - ->
-                        <li><input type='text' id='email-input' name='email' placeholder="Enter your email"></li>
-                    </ul>
-                    <input type='submit' id='email-submit'>
-                </form>
-            </div>
-        -->
+        <div class="logo-stuff">
+           <!--  <div class='footer-outline'></div> -->
+            <img class='comp-sci-logo' src='../images/logo_for_web_2_2025.png' alt=''>
+           <!--  <div class='footer-outline'></div> -->
         </div>
-        <div class='css-socials'>
-            <ul>
-                <li>STAY IN THE LOOP</li>
-                <!-- Instagram link -->
-                <li>
-                    <a href='https://www.instagram.com/cppcss/' target='_blank'>
-                        <img src='images/instagram.svg' alt='instagram'>
-                    </a>
-                    <a class='socials-link' href='https://www.instagram.com/cppcss/' target='_blank'>
-                        cppcss
-                    </a>
-                </li>
-                <!-- Facebook link -->
-                <li>
-                    <a href='https://www.facebook.com/groups/cppcss/' target='_blank'>
-                        <img src='images/facebook.svg' alt='facebook'>
-                    </a>
-                    <a class='socials-link' href='https://www.facebook.com/groups/cppcss/' target='_blank'>
-                        cppcss
-                    </a>
-                </li>
-                <!-- Youtube link -->
-                <li>
-                    <a href='https://www.youtube.com/channel/UC8sXz4RNrixxpLXBI56_jGw' target='_blank'>
-                        <img src='images/youtube.svg' alt='youtube'>
-                    </a>
-                    <a class='socials-link' href='https://www.youtube.com/channel/UC8sXz4RNrixxpLXBI56_jGw' target='_blank'>
-                        Cal Poly Pomona - Computer Science Society
-                    </a>
-                </li>
-                <!-- Github link -->
-                <li>
-                    <a href='https://github.com/cpp-css' target='_blank'>
-                        <img src='images/github.svg' alt='github'>
-                    </a>
-                    <a class='socials-link' href='https://github.com/cpp-css' target='_blank'>
-                        cpp-css
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!-- Footer navigation links for desktop -->
-        <div class='footer-nav-links'>
-            <ul>
-                <li>
-                    <a href='#top' class='navbar-link smoothScroll'>HOME</a>
-                </li>
-                <li>
-                    <a href='#about' class='navbar-link smoothScroll'>ABOUT</a>
-                </li>
-                <li>
-                    <a href='#e-board' class='navbar-link smoothScroll'>E-BOARD</a>
-                </li>
-                <li>
-                    <a href='#events' class='navbar-link smoothScroll'>EVENTS</a>
-                </li>
-                <li>
-                    <a href='#projects' class='navbar-link smoothScroll'>PROJECTS</a>
-                </li>
+        <div class="social-stuff">
+
+            <div class='email-container'>
+                <ul>
+                    <li>REACH US AT OUR EMAIL</li>
+                    <li>css.cpp.edu@gmail.com</li>
+                </ul>
+                <!-- HTML Form for new club members to input their e-mail to be added to club mailing
+                list -->
                 <!-- 
-                <li>
-                    <a href='#alumni' class='navbar-link smoothScroll'>ALUMNI</a>
-                </li>
-                -->
-            </ul>
+                <div class='email-form'>
+                    <!- - placeholder action for PHP file to process user's inputted email to add to mailing list - ->
+                    <form action=''>
+                        <ul>
+                            <li>BECOME A MEMBER</li>
+                            <!- - This is where users input their email - ->
+                            <li><input type='text' id='email-input' name='email' placeholder="Enter your email"></li>
+                        </ul>
+                        <input type='submit' id='email-submit'>
+                    </form>
+                </div>
+            -->
+            </div>
+            <div class='css-socials'>
+                <ul>
+                    <li>STAY IN THE LOOP</li>
+                    <!-- Instagram link -->
+                    <li>
+                        <a href='https://www.instagram.com/cppcss/' target='_blank'>
+                            <img src='images/instagram.svg' alt='instagram'>
+                        </a>
+                        <a class='socials-link' href='https://www.instagram.com/cppcss/' target='_blank'>
+                            cppcss
+                        </a>
+                    </li>
+                    <!-- Facebook link -->
+                    <li>
+                        <a href='https://www.facebook.com/groups/cppcss/' target='_blank'>
+                            <img src='images/facebook.svg' alt='facebook'>
+                        </a>
+                        <a class='socials-link' href='https://www.facebook.com/groups/cppcss/' target='_blank'>
+                            cppcss
+                        </a>
+                    </li>
+                    <!-- Youtube link -->
+                    <li>
+                        <a href='https://www.youtube.com/channel/UC8sXz4RNrixxpLXBI56_jGw' target='_blank'>
+                            <img src='images/youtube.svg' alt='youtube'>
+                        </a>
+                        <a class='socials-link' href='https://www.youtube.com/channel/UC8sXz4RNrixxpLXBI56_jGw' target='_blank'>
+                            Cal Poly Pomona - Computer Science Society
+                        </a>
+                    </li>
+                    <!-- Github link -->
+                    <li>
+                        <a href='https://github.com/cpp-css' target='_blank'>
+                            <img src='images/github.svg' alt='github'>
+                        </a>
+                        <a class='socials-link' href='https://github.com/cpp-css' target='_blank'>
+                            cpp-css
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Footer navigation links for desktop -->
+            <div class='footer-nav-links'>
+                <ul>
+                    <li>
+                        <a href='#top' class='navbar-link smoothScroll'>HOME</a>
+                    </li>
+                    <li>
+                        <a href='#about' class='navbar-link smoothScroll'>ABOUT</a>
+                    </li>
+                    <li>
+                        <a href='#e-board' class='navbar-link smoothScroll'>E-BOARD</a>
+                    </li>
+                    <li>
+                        <a href='#events' class='navbar-link smoothScroll'>EVENTS</a>
+                    </li>
+                    <li>
+                        <a href='#projects' class='navbar-link smoothScroll'>PROJECTS</a>
+                    </li>
+                    <!-- 
+                    <li>
+                        <a href='#alumni' class='navbar-link smoothScroll'>ALUMNI</a>
+                    </li>
+                    -->
+                </ul>
+            </div>
         </div>
         <!-- button to scroll to top for mobile -->
         <a href='#top' class='top-button smoothScroll'>top</a>

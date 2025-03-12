@@ -236,7 +236,7 @@ $(document).ready(function() {
             $root.animate({
                 scrollTop: $(this.hash).offset().top
             // how much time it takes to smooth scroll in milliseconds
-            }, 2500);
+            }, 1500);
         });
     }
     
@@ -510,7 +510,7 @@ $(document).ready(function() {
             }
             eboardDescContainer.style.transform = `translateX(${-paragraphSize * counter}px)`;
             // update e-board gallery counter below the pictures
-            eboardCounter.innerHTML = `${counter + 1} / 12`;
+            eboardCounter.innerHTML = `${counter + 1} / 11`;
 
             /* increment counter and add the active photo class and remove the inactive class from the
             element */
@@ -554,7 +554,7 @@ $(document).ready(function() {
             eboardDescriptions[counter].classList.remove('e-board-description-inactive');
 
             // update e-board gallery counter below pictures
-            eboardCounter.innerHTML = `${counter + 1} / 12`;
+            eboardCounter.innerHTML = `${counter + 1} / 11`;
         }
     });
 

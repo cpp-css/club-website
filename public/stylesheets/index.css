@@ -124,6 +124,43 @@
     color: var(--dark-gray);
 }
 
+
+/* REMOVE THIS WHEN THE BRONCO HACKS 2025 IS OVER*/
+/* JUSTIN DOESN'T LIKE THIS HE THINKS IT DOESN'T MATCH WITH THE PAGE */
+/* .broncohacks2025-glazing {
+    position: absolute;
+    height: 40%;
+    width: 25%;
+    top: 55%;
+    transform: rotate(20deg) translateX(-20%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.look-here, .bronohacks-poster, .link-to-broncohacks2025 {
+    position: absolute;
+}
+
+.look-here {
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    z-index: 5;
+}
+
+.link-to-broncohacks2025 {
+    z-index: 10;
+}
+
+
+.broncohacks-poster {
+    height: auto;
+    width: 100%;
+    z-index: 2;
+} */
+
+
+
 /* scroll indicator at bottom of screen */
 @keyframes scrollIndicatorLoop {
     from {
@@ -637,6 +674,7 @@ header {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    padding: 0 5%;
 }
 
 /* hide desktop projects elements */
@@ -802,7 +840,8 @@ footer ul {
 
 .comp-sci-logo {
     order: 3;
-    transform: scale(0.5);
+    width: 50%;
+    margin-bottom: 4rem;
 }
 
 .comp-sci-logo img {
@@ -1061,6 +1100,50 @@ footer ul {
         margin-bottom: 0rem;
         width: 75%;
     }
+
+    /* REMOVE THIS WHEN THE BRONCO HACKS 2025 IS OVER*/
+    /* .broncohacks2025-glazing {
+        position: absolute;
+        height: 20%;
+        width: 15%;
+        top: 30%;
+        right: 20%;
+        transform: rotate(20deg);
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .broncohacks2025-glazing:hover {
+        transform: scale(1.2) rotate(0deg);
+    }
+    
+    .look-here, .bronohacks-poster, .link-to-broncohacks2025 {
+        position: absolute;
+    }
+    
+    .look-here {
+        width: 120%;
+        height: 120%;
+        top: -10%;
+        left: -10%;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        z-index: 5;
+    }
+    
+    .look-here:hover {
+        opacity: 1;
+    }
+    
+    .link-to-broncohacks2025 {
+        z-index: 10;
+    }
+    
+    
+    .broncohacks-poster {
+        height: auto;
+        width: 100%;
+        z-index: 2;
+    } */
 
     /* about section rules */
 
@@ -1373,8 +1456,8 @@ footer ul {
 
     .events-grid {
         display: grid;
-        grid-template-columns: 1fr 1.5fr 1fr;
-        grid-template-rows: 1.5fr 1fr 2fr 1.5fr 1.5fr 1fr 1.75fr 2fr 1fr;
+        grid-template-columns: 1fr 1.5fr 1.5fr;
+        grid-template-rows: 1.5fr 1fr 2fr 1.5fr 1.5fr 1.5fr 1.75fr 2fr 1fr;
         text-align: center;
         width: 100%;
     }
@@ -1506,10 +1589,9 @@ footer ul {
     }
 
     /* before pseudoelements to connect the light blue line in this section  */
+    #BroncoHacksHackathon::before,
     #CSSPI::before,
-    #web-design::before,
-    #recruiter::before,
-    #workshops::before {
+    #recruiter::before {
         content: '';
         display: block;
         background-color: var(--blue);
@@ -1520,7 +1602,7 @@ footer ul {
         top: -5px;
     }
 
-    #CSSPI {
+    #BroncoHacksHackathon {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
@@ -1528,15 +1610,17 @@ footer ul {
         position: relative;
     }
 
-    #web-design {
+    #CSSPI {
         position: relative;
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 3;
         grid-row-end: 4;
+        /* bruh this was so hard to find but all the lines are connected now */
+        width: calc(100% - 5px);
     }
 
-    #speaker {
+    #web-design {
         border-left: none;
         border-right: 5px solid var(--blue);
         position: relative;
@@ -1544,9 +1628,16 @@ footer ul {
         grid-column-end: 4;
         grid-row-start: 4;
         grid-row-end: 5;
+        left: -5px;
     }
 
-    #recruiter {
+    #web-design::before{
+        left: initial;
+        right: 5px;
+    }
+
+
+    #speaker {
         border-left: none;
         border-right: 5px solid var(--blue);
         position: relative;
@@ -1556,13 +1647,13 @@ footer ul {
         grid-row-end: 6;
     }
 
-    #recruiter::before,
-    #workshops::before {
+    #speaker::before,
+    #recruiter::before {
         left: initial;
         right: -5px;
     }
 
-    #workshops {
+    #recruiter {
         border-left: none;
         border-right: 5px solid var(--blue);
         position: relative;
@@ -1570,6 +1661,15 @@ footer ul {
         grid-column-end: 2;
         grid-row-start: 6;
         grid-row-end: 7;
+    }
+
+    #workshops {
+        border-left: none;
+        position: relative;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 7;
+        grid-row-end: 8;
     }
 
     .events-grid-spacer {
@@ -1627,12 +1727,12 @@ footer ul {
     #projects::before {
         content: '';
         position: absolute;
-        width: 5px;
+        width: 4.5px;
         background-color: white;
         display: block;
         height: 20vh;
-        top: -7%;
-        right: 4.9%;
+        top: -5rem;
+        right: 5%;
         z-index: 3;
     }
 
@@ -1866,27 +1966,47 @@ footer ul {
 
 
     /* footer rules */
-    .footer-container {
+    /* .footer-container {
         display: grid;
-        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: minmax(1fr, auto);
         grid-gap: 3rem;
         justify-content: space-evenly;
         align-content: space-around;
         margin: 0 auto;
         padding: 4rem;
+    } */
+
+    .logo-stuff {
+        width: 90%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
     }
 
     .footer-outline {
-        border-bottom: 1px solid rgba(255,255,255,0.4);
-        height: 15vh;
-        margin: auto 0;
+        background-color: rgba(255,255,255,0.4);
+        width: 100%;
+        height: 2px;
     }
 
     .comp-sci-logo {
-        margin: 0 auto;
-        order: unset;
-        transform: scale(0.6);
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        max-width: 500px;
+        justify-content: center;
+        flex-shrink: 0;
+        padding: 0 1rem; 
+    }
+
+    .social-stuff {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
     }
 
     .footer-container li {
