@@ -53,7 +53,7 @@ jobs:
       - name: Move build files
         run: mv ${{ env.BUILD_PATH }}/build/* ${{ env.BUILD_PATH }}/public
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           path: ${{ env.BUILD_PATH }}/public
 
@@ -67,4 +67,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
