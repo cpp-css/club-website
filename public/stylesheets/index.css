@@ -1616,6 +1616,8 @@ footer ul {
         grid-column-end: 4;
         grid-row-start: 3;
         grid-row-end: 4;
+        /* bruh this was so hard to find but all the lines are connected now */
+        width: calc(100% - 5px);
     }
 
     #web-design {
@@ -1725,12 +1727,12 @@ footer ul {
     #projects::before {
         content: '';
         position: absolute;
-        width: 5px;
+        width: 4.5px;
         background-color: white;
         display: block;
         height: 20vh;
-        top: -7%;
-        right: 4.9%;
+        top: -5rem;
+        right: 5%;
         z-index: 3;
     }
 
