@@ -43,7 +43,7 @@ jobs:
           cache-dependency-path: ${{ env.BUILD_PATH }}/package-lock.json
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
       - name: Install dependencies
         run: npm ci
         working-directory: ${{ env.BUILD_PATH }}
@@ -54,7 +54,7 @@ jobs:
       - name: Move build files
         run: mv ${{ env.BUILD_PATH }}/build/* ${{ env.BUILD_PATH }}/public
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           path: ${{ env.BUILD_PATH }}/public
 
@@ -69,3 +69,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+          
