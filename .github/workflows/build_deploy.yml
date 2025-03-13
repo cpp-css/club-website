@@ -1,5 +1,6 @@
 # Author: GitHub + Amar Gandhi ('24)
-# Updated by Nicholas Amancio 3/13/2025
+# Updated by Nicholas Amancio (3/12/25)
+
 name: Build and deploy site to Pages
 
 on:
@@ -53,8 +54,8 @@ jobs:
         working-directory: ${{ env.BUILD_PATH }}
       - name: Move build files
         run: mv ${{ env.BUILD_PATH }}/build/* ${{ env.BUILD_PATH }}/public
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload static files as artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ env.BUILD_PATH }}/public/
 
@@ -69,4 +70,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-          
