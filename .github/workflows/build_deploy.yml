@@ -54,9 +54,9 @@ jobs:
       - name: Move build files
         run: mv ${{ env.BUILD_PATH }}/build/* ${{ env.BUILD_PATH }}/public
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          path: ${{ env.BUILD_PATH }}/public
+          path: ${{ env.BUILD_PATH }}/public/
 
   deploy:
     environment:
