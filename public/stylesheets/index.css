@@ -677,6 +677,15 @@ header {
     padding: 0 5%;
 }
 
+.project-container ul {
+    list-style: none;
+}
+
+.project-description li.button-container {
+    display: flex;
+    flex-direction: column;
+}
+
 /* hide desktop projects elements */
 #projects .circle,
 .projects-banner {
@@ -704,6 +713,10 @@ header {
 
 .project-description li {
     margin-bottom: 1rem;
+}
+
+.project-description li a {
+    color: #1bc778;
 }
 
 .app-demo {
@@ -1807,8 +1820,21 @@ footer ul {
         margin-top: 1rem;
     }
 
+    .project-description li a {
+        color: #1bc778;
+    }
+
+    .project-description li a:hover {
+        color: #28f08c;
+    }
+
     .project-description li.button-container {
         list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 1rem;
     }
 
     .app-demo {
